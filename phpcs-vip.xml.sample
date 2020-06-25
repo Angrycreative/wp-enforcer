@@ -35,12 +35,6 @@
     </properties>
   </rule>
 
-  <!-- Add PHP compatbility testing for PHP 7.4 -->
-  <config name="testVersion" value="7.4-"/>
-  <rule ref="PHPCompatibilityWP">
-      <include-pattern>*\.php$</include-pattern>
-  </rule>
-
 	<rule ref="WordPress-VIP" />
 	<rule ref="WordPress-Docs" />
 </ruleset>
