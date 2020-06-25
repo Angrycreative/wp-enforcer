@@ -28,6 +28,11 @@
     <severity>0</severity>
   </rule>
 
+  <!-- Allow short ternary operators -->
+  <rule ref="WordPress.PHP.DisallowShortTernary">
+    <severity>0</severity>
+  </rule>
+
   <!-- Allow PSR4 file naming -->
   <rule ref="WordPress.Files.FileName">
     <properties>

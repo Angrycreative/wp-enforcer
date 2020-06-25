@@ -4,7 +4,7 @@
   ruleset.xml standard: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml
 -->
 <ruleset name="WP-Enforcer">
-	<description>Coding standards from WP Enforcer.</description>
+  <description>Coding standards from WP Enforcer.</description>
 
  <!-- Excludes -->
   <exclude-pattern>/conf/*</exclude-pattern>
@@ -28,6 +28,11 @@
     <severity>0</severity>
   </rule>
 
+  <!-- Allow short ternary operators -->
+  <rule ref="WordPress.PHP.DisallowShortTernary">
+    <severity>0</severity>
+  </rule>
+
   <!-- Allow PSR4 file naming -->
   <rule ref="WordPress.Files.FileName">
     <properties>
@@ -35,6 +40,6 @@
     </properties>
   </rule>
 
-	<rule ref="WordPress-VIP" />
-	<rule ref="WordPress-Docs" />
+  <rule ref="WordPress-VIP" />
+  <rule ref="WordPress-Docs" />
 </ruleset>
