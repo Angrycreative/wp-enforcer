@@ -136,7 +136,7 @@ fi
 
 # Copy the PHP_CodeSniffer standards file if WordPress standard is not available
 #
-if [[ "global" -eq ${PHPCS_PATH} && 0 -lt $(phpcs -i | grep -woe ${PHPCS_STANDARD} | wc -w) ]]; then
+if [[ 0 -lt $("{phpcs_path}" -i | grep -woe {phpcs_standard} | wc -w) ]]; then
   echo "WordPress standard has been installed as global using ${PHPCS_STANDARD} as standard"
 elif [[ ! -f "$PROJECT"/phpcs.xml && "$ruleset" = false ]]; then
   if [ "$vip" = false ]; then
