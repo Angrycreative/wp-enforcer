@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0] - 2020-06-25
+
+* Updated version
+* Updated phpcs rules.
 
 ## [0.5.0] - 2017-05-28
 
